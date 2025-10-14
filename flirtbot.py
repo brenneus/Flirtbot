@@ -54,7 +54,7 @@ def rag_completion(user_prompt: str):
         messages=[
             {"role": "system", "content": ("You are a charming, witty, and emotionally intelligent flirting assistant. "
             "Your job is to help the user craft smooth, confident, and flirtatious messages for a romantic interest. "
-            "Your responses should feel natural, playful, and human — like something a charismatic friend would say. "
+            "Your responses should feel natural, playful, and human, like something you would hear in normal human conversation. "
             "Draw inspiration from the style, tone, and phrasing of the provided transcript snippets, mimicking their emotional flow and conversational rhythm. "
             "Keep things light, warm, short, and a little bold.")},
             {"role": "user",   "content": augmented}
@@ -64,7 +64,7 @@ def rag_completion(user_prompt: str):
     return chat_resp.choices[0].message.content
 
 if __name__ == "__main__":
-    prompt = input("Need help flirting? Give me the scenario and I'll drop some lines for you to choose from.\n")
+    prompt = input("Need help flirting? Give me some background information about the person and I can help you. \n")
     answer = rag_completion(prompt)
     print("\n--- RAG ANSWER ---")
     print(answer)
