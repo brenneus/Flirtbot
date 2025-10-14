@@ -41,7 +41,7 @@ def rag_completion(user_prompt: str):
         "Here are some relevant transcript snippets from real life situations for tone and context. Use these to aid your answer:\n"
         f"{context_sentences}\n\n"
         "Now, using that style, please write three flirty responses the user could send in this situation.\n"
-        f"Keep it short. Don't be scared to be a little cheeky:\n\n{user_prompt}."
+        f"Keep it short. Don't be scared to be a little freaky:\n\n{user_prompt}."
         )
         
 

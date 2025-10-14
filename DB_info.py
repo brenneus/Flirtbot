@@ -3,9 +3,6 @@
 import nltk
 from nltk.tokenize import sent_tokenize
 
-# download once
-# nltk.download("punkt")
-
 with open("transcripts.txt", "r", encoding="utf-8") as f:
     text = f.read()
 

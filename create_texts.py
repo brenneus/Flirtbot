@@ -45,6 +45,7 @@ if __name__ == "__main__":
     text = extract_text_from_html_url(url)
 
     os.makedirs("texts", exist_ok=True)
+    # change this as desired
     name = "S1E11.txt"
     out_path = os.path.join("texts", name)
     with open(out_path, "w", encoding="utf-8") as f:
